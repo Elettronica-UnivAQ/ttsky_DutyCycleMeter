@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+There is FSM that counts how many times the input signal is "ON" in a fixed time window, than it calculates the duty cycle
 
 ## How to test
 
-Explain how to use your project
+just put a PWM signal to the input ui.in[0] and check the first 7 bits of uo.out (the duty cycle value) and the bit uo.out[7] (the valid signal). The value 127 corresponds to a duty cycle of 100%
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+A signal generator or PWM generator for the input and a logic state analyzer to check the output
